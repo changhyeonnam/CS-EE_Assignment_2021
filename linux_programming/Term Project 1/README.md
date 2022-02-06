@@ -3,9 +3,8 @@
 ### 1. 개발 환경
 
 - 운영체제 : Mac OS X에서 개발하였고, Ubuntu에서도 검증하였습니다.
-
 - 언어 : C
-
+- IDE : Clion
 - Compiler : gcc
 
 ### 2. Term Project 1: Making Own Shell (smallsh) 설명

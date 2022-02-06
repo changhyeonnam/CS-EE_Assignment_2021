@@ -3,11 +3,8 @@
 ### 1. 개발 환경
 
 - 운영체제 : Mac OS X (Ubuntu에서도 정상  작동)
-
 - IDE : Clion
-
 - 언어 : C
-
 - Compiler : gcc
 
 ### 2. Term Project 2: Improving smallsh 설명
