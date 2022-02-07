@@ -9,11 +9,11 @@
 
 ### 2. Term Project 1: Making Own Shell (smallsh) 설명
 
-주어진 shell program code에서, (1) cd (2) exit (3) > (output redirection) 기능을 추가 구현하고, 주어진 & (background) 동작에 대해 생길 수 있는 문제점을 분석하는 프로젝트 였습니다.
+주어진 shell program code에서, (1) `cd` (2) `exit` (3) `>` (output redirection) 기능을 추가 구현하고, 주어진 `&` (background) 동작에 대해 생길 수 있는 문제점을 분석하는 프로젝트 였습니다.
 
 ### 3. cd code 설명
 
-먼저 cd에 대해 설명하겠습니다. cd는 ls,kill과 같은 시스템콜의 동작과 다릅니다. ls ,kill과 같은 시스템콜은 `fork()`를 통해 자식 프로세스를 실행시킨뒤, execvp()를 통해 실행됩니다. 즉, 자식프로세스에서 ls, kill 프로그램이 실행됩니다. 그에 반해 cd는 change directory를 의미하는 built in command로써, 현재 shell을 실행시키는 process의 current directory를 바꾸는데 사용해야합니다. 만약 자식을 fork하여 cd를 실행하면 부모의 directory가 바뀌는 것이 아닌 자식의 directory가 바뀝니다.
+먼저 cd에 대해 설명하겠습니다. `cd`는 `ls,kill`과 같은 시스템콜의 동작과 다릅니다. `ls ,kill`과 같은 시스템콜은 `fork()`를 통해 자식 프로세스를 실행시킨뒤, `execvp()`를 통해 실행됩니다. 즉, 자식프로세스에서 `ls, kill` 프로그램이 실행됩니다. 그에 반해 `cd`는 change directory를 의미하는 built in command로써, 현재 shell을 실행시키는 process의 current directory를 바꾸는데 사용해야합니다. 만약 자식을 fork하여 cd를 실행하면 부모의 directory가 바뀌는 것이 아닌 자식의 directory가 바뀝니다.
 
 먼저 procline 함수에 argument가 cd이면 cmd_cd를 호출하였습니다.
 
@@ -147,7 +147,7 @@ gcc -o smallsh main.c smallsh.c
 
 ### 8. result
 
-1. ls -l
+1. `ls -l`
 
     ```c
     Command> ls -l
@@ -165,7 +165,7 @@ gcc -o smallsh main.c smallsh.c
     -rw-r--r--   1 changhyeon  staff    687 Nov 19 17:22 smallsh.h
     ```
 
-2. cd
+2. `cd`
 
     ```c
     Command> cd linux
