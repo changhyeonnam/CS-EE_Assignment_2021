@@ -176,7 +176,7 @@ gcc -o smallsh main.c smallsh.c
     /Users/changhyeon/Documents/linux_programming
     ```
 
-3. > (redirection)
+3. `>` (redirection)
 
     ```c
     Command> ls -l > file.txt
@@ -197,7 +197,7 @@ gcc -o smallsh main.c smallsh.c
     "file.txt" 11L, 653
     ```
 
-4. ';', '>', '&' 동시 동작
+4. `;, >, &` 동시 동작
 
     ```c
     Command> ls -l&; ls
@@ -217,7 +217,7 @@ gcc -o smallsh main.c smallsh.c
     -rw-r--r--   1 changhyeon  staff    687 Nov 19 17:22 smallsh.h
     ```
 
-5. exit
+5. `exit`
 
     ```c
     Command> exit
